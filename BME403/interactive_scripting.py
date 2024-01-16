@@ -27,7 +27,7 @@ def create_data(*, update_period, num_updates):
         yield np.random.random((512, 512))
         time.sleep(update_period)
 
-create_data(update_period=0.05, num_updates=500)
+create_data(update_period=0.01, num_updates=500)
 
 if __name__ == '__main__':
     napari.run()
